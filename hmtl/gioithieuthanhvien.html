@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thành Viên</title>
+
+<style>
+:root{
+  --do-nau-nhat: #EFBDBA;
+  --do-nau-dam: #B46A6A;
+  --do-tram: #8B3A3A;
+  --nen: #f4f0ef;
+  --trang: #ffffff;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  background-color: var(--nen);
+}
+
+/* ===== TIÊU ĐỀ ===== */
+h1{
+  text-align: center;
+  color: var(--do-tram);
+  margin-bottom: 30px;
+}
+
+/* ===== KHUNG DANH SÁCH (KHÔNG DÙNG BẢNG) ===== */
+.member-box{
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--trang);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(180,106,106,0.25);
+}
+
+/* ===== TIÊU ĐỀ CỘT ===== */
+.row-header{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1.5fr;
+  background: linear-gradient(90deg, var(--do-nau-nhat), var(--do-nau-dam));
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== DÒNG THÀNH VIÊN ===== */
+.row{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1.5fr;
+  align-items: center;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.row:last-child{
+  border-bottom: none;
+}
+
+/* ===== HIỆU ỨNG HOVER ===== */
+.row:hover{
+  background-color: #ffe3df;
+  transition: 0.3s;
+}
+
+//* ===== ẢNH CHÂN DUNG ===== */
+.avatar-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.avatar{
+  width: 130px;        
+  height: 130px;
+  border-radius: 15px; 
+  object-fit: cover;
+  border: 4px solid var(--do-nau-dam);
+  box-shadow: 0 4px 10px rgba(180,106,106,0.3);
+  transition: 0.3s;
+}
+
+/* hiệu ứng khi rê chuột vào ảnh */
+.avatar:hover{
+  transform: scale(1.05);
+}
+/* ===== NÚT QUAY VỀ ===== */
+.back{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: var(--do-nau-dam);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back:hover{
+    background-color: var(--do-nau-nhat);
+    color: #8B3A3A;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🌸 Danh Sách Thành Viên 🌸</h1>
+
+<div class="member-box">
+
+  <div class="row-header">
+    <div>STT</div>
+    <div>Họ Và Tên</div>
+    <div>Lớp</div>
+    <div>Số Máy</div>
+    <div>Chân Dung</div>
+  </div>
+
+  <div class="row">
+    <div>1</div>
+    <div>Trần Thị Ngọc Hân</div>
+    <div>12A1</div>
+    <div>16</div>
+    <div class="avatar-wrap">
+  <img src="ngochan.jpg" class="avatar" alt="Ngọc Hân">
+</div>
+  </div>
+
+  <div class="row">
+    <div>2</div>
+    <div>Vũ Hương Giang</div>
+    <div>12A1</div>
+    <div>14</div>
+    <div class="avatar-wrap">
+  <img src="huonggiang.jpg" class="avatar" alt="Hương Giang">
+</div>
+  </div>
+
+</div>
+
+<a class="back" href="file:///D:/anh/hmtl/index.html.html">⬅ Quay về Trang chủ</a>
+
+
+</body>
+</html>
