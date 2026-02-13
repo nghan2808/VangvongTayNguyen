@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TIẾNG VỌNG TÂY NGUYÊN</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=2qF0TBo91Oa1Oy-xx3hY7aGzRF9jBGY5POGSNIDaakgDNJ00LnEEif0KwTvwgzsBYKDjBVN5TRm_uwz90x0hEK0duJgKVQq670asXGSC1IcNrI2aEjkHhO18idNBsl4SDKCC17FFLiYAutFBMLZvZDQyIG69K8GIXynL8_6SjBEfPm7-OqC5OGOn-kkxMD0f" charset="UTF-8"></script></head>
+
+<style type="text/css">
+	.init{margin: 20px; 
+		padding: 10px; 
+		border-style: solid;
+		background-color:#FFFFCC;
+		border-radius: 30px;
+		font-family: verdana;
+		font-size: 20px;
+	}
+   .header {
+      display: flex;
+      color: red;
+      align-items: center;
+      border-radius: 30px;
+      /*box-shadow: 0 0 8px;*/
+    }
+    
+:root{
+  --nen-chung: linear-gradient(90deg, #EFBDBA, #B46A6A);
+}
+.header{
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+  background: var(--nen-chung);
+}
+..logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.title{
+  flex: 3;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #6b1d1d; 
+  text-align: center;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+	 /* Định dạng cho thanh menu */
+        nav {
+            background-color: #990033;
+            overflow: hidden;
+            margin: 20px;
+            border-radius: 30px;
+            justify-content: center;
+            display: flex;
+            /*justify-content: space-between; */ /* Giãn đều nhau */
+            /*flex-grow: 1; */
+        }
+            
+
+    /* Định dạng cho các liên kết trong menu */
+        nav a {
+            float: left;
+            display: block;
+            color: yellow;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+    /* Hiệu ứng khi di chuột vào liên kết trong menu */
+        nav a:hover {
+            background-color: lightred;
+            color: red;
+        }
+
+	/* Định dạng menu con */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;  
+            outline: none;
+            color: yellow;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFFFCC;
+            border-radius: 20px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        /* CSS link trong menu con */
+        .dropdown-content a {
+            float: none;
+            color: hotred;
+            padding: 12px 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: block;
+            text-align: left;
+        }
+	/* Hiệu ứng khi di chuột vào liên kết trong menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFFFCC;
+            border-radius: 20px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+	   .dropdown:hover .dropdown-content {
+            display: block;
+        }
+      .main {margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      border-radius: 30px;
+      gap: 20px; /* Giãn khoảng cách giữa các ô */  
+    
+    }
+
+    .box {
+      flex: 1 1 calc(50% - 30px);
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 30px;
+      box-sizing: border-box;
+      background-color: #FFFFCC;
+    }
+
+    /* Chân trang */
+    .footer{color: red;
+		border-radius: 30px;
+		padding: 20px;
+	}
+    
+.form-do label{
+    color: #cc0033;
+    font-weight: bold;
+}
+
+.form-do input, .form-do textarea{
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ff3366;
+    border-radius: 8px;
+    background: #fffdf0; /* làm input sáng hơn một chút */
+}
+
+.form-do button{
+    background: #ff3366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-do button:hover{
+    background: #cc0033;
+}
+.video-container {
+  display: flex;
+  justify-content: center; /* căn ngang */
+  align-items: center;     /* căn dọc (nếu có chiều cao) */
+}
+
+video {
+  border-radius: 20px;
+  overflow: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+	
+    h1{color: blue; font-family: tahoma;}
+</style>
+
+<body>
+
+<div class="init header">
+  <div class="logo">
+    <img src="logoxinh.png" alt="Logo của tôi" width="300" height="800">
+  </div>
+  <div class="title">
+ <h1><p style="color: #990000;">“VANG VỌNG CỒNG CHIÊNG”<span style='font-size:30px;'>&#127799;</span></h1>
+
+</p>
+  </div>
+</div>
+
+	
+<!-- Thanh menu -->
+    <nav>
+        <a href="file:///D:/anh/hmtl/trangchu.html">Trang chủ</a>
+        <a href="file:///D:/anh/hmtl/gioithieucongchieng.html">Giới thiệu</a> 
+      
+        <!-- Menu Dịch vụ có menu con -->
+        <div class="dropdown">
+            <button class="dropbtn">Lựa chọn</button>
+            <div class="dropdown-content">
+                <a href="file:///D:/anh/hmtl/thuctrangvabaoton.html"> Thực trạng và bảo tồn </a>
+                <a href="file:///D:/anh/hmtl/ynghia.html"> Ý nghĩa </a>
+                
+            </div>
+        </div>
+        <a href="#contact">Liên hệ</a>
+        <a href="file:///D:/anh/hmtl/gioithieuthanhvien.html" target="_blank">Về chúng tôi</a>
+        <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+    </nav>
+
+		
+	<div class="main">
+	
+        <div class="box">
+            <h1> <p style="text-align: center;color: #990000;"> TIẾNG VỌNG CỒNG CHIÊNG</h1>
+            <table>
+            <tr style="font-style: italic;"> <td width="800">  
+            <p style="text-align: center;">
+Tây Nguyên<br>        
+gieo vạt nắng chiều<br>
+Chòng chành mây lượn<br>
+đẹp xiêu lòng người.<br>
+<br>
+Cô sơn nữ<br>
+nở nụ cười<br>
+Thêm duyên dáng núi<br>
+rạng ngời biếc xanh.<br>
+<br>
+Cồng chiêng<br>
+vọng tiếng yên lành<br>
+Niềm vui<br>
+tỏa khắp thị thành, thôn quê.<br>
+Hòa vào hương vị cà phê<br>
+<br>
+Níu chân lữ khách<br>
+đường về còn vương...<br>
+Một bến nhớ<br>
+một trời thương<br>
+Mắc giăng bảng lảng<br>
+màn sương bềnh bồng.<br>
+<br>
+Xa rồi<br>
+vẫn nhớ cùng mong<br>
+Hẹn ngày hội ngộ<br>
+nối vòng cồng chiêng.<br>
+<br> 
+</p>           
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+            <p style="color: red;text-align: center;"> <em> Nguyễn Tấn Hỷ</em></p>
+        </div>
+        <div class="box">
+            <h1> <p style="text-align: center;color: #990000;">HÌNH ẢNH</p></h1>
+<img src="congchieng.jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">
+<img src="images.jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">
+<img src="images (2).jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">         
+<img src="images (3).jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">
+<img src="images (4).jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">
+ <img src="images (5).jpg"
+     style="border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+            width: 300px;">           
+        </div>
+        <div class="box">
+            <h1> <p style="text-align: center;color: #990000;"> ÂM VANG</p> </h1>
+     <audio controls>
+     <source src="videoplayback.mp3" type="audio/mpeg">
+     </audio> </p>
+        </div>
+        <div class="box">
+            <h1><p style="text-align: center;color: #990000;"> VIDEO </p></h1>
+ <p>
+    <div class="video-container">
+  <video width="600" controls>
+    <source src="VIDEO.mp4" type="video/mp4">
+  </video>
+</div>
+ </p>
+        </div>
+	</div>
+	   
+    <div id="contact" class="init" 
+     style="background-color:#FFFFCC; box-shadow: 0 0 8px; padding: 20px;">
+
+<form class="form-do">
+  <label>Họ và tên:</label><br>
+  <input type="text" placeholder="Nhập tên của bạn"><br><br>
+
+  <label>Email:</label><br>
+  <input type="email" placeholder="Nhập email"><br><br>
+
+  <label>Nhận xét về Cồng chiêng Tây Nguyên:</label><br>
+  <textarea rows="4" placeholder="Viết ý kiến của bạn..."></textarea><br><br>
+
+  <button type="submit">Gửi</button>
+</form>
+
+</div> 
+<div class="init footer" 
+     style="
+     text-align: center; 
+     background: linear-gradient(90deg, #EFBDBA, #B46A6A);
+     padding: 20px;
+     border-radius: 15px;
+     margin-top: 20px;
+     ">
+
+    <div style="color: #7A2A2A; font-weight: 600;">
+      ©️ Vũ Hương Giang - Trần Thị Ngọc Hân 💗 
+    </div>
+
+    <div style="color: #7A2A2A;">
+      📧 Địa chỉ: Lớp 12A1 - THPT NBK - Gia Lai 
+    </div>
+
+    <div style="color: #7A2A2A;">
+      📧 Email: huonggiangvu42@gmail.com - trthingochan.2008gl@gmail.com
+    </div> 
+</div>
+<style>
+/* lớp pháo hoa phủ toàn màn hình */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+</style>
+
+<canvas id="confetti"></canvas>
+
+<script>
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let pieces = [];
+
+function random(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+for (let i = 0; i < 120; i++) {
+  pieces.push({
+    x: random(0, canvas.width),
+    y: random(-canvas.height, 0),
+    r: random(2, 6),
+    color: `hsl(${random(0, 360)}, 100%, 70%)`,
+    speed: random(1, 5)
+  });
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  pieces.forEach(p => {
+    ctx.beginPath();
+    ctx.fillStyle = p.color;
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fill();
+
+    p.y += p.speed;
+
+    if (p.y > canvas.height) {
+      p.y = random(-100, 0);
+      p.x = random(0, canvas.width);
+    }
+  });
+
+  requestAnimationFrame(draw);
+}
+draw();
+setTimeout(() => {
+  canvas.style.display = "none";
+}, 6000);
+
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
+</script>
+</body>
+<h2> <P style="text-align: center;color: red;"> Thank you !!! <span style='font-size:40px;'>&#127799;</span> </h2>
+</html>
